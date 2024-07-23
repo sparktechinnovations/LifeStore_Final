@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  build:
+    commands:
+      - npm install
+      - zip -r9 deployment_package.zip .
+  post_build:
+    commands:
+      - echo "Updating Lambda Function..."
+      - aws lambda update-function-code --function-name lifestore-api --zip-file fileb://deployment_package.zip
+      - echo "DONE!!"

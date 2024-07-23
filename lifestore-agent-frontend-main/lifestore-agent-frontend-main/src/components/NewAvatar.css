@@ -1,0 +1,18 @@
+
+
+/* Style for the avatar container */
+.avatar-container {
+    position: relative;
+    
+    top: 0;
+    right: 0;
+    margin: 16px; /* Adjust margin as needed for spacing */
+  }
+  
+  /* Style for the rounded avatar */
+  .avatar-image {
+    width: 64px; /* Adjust the size as needed */
+    height: 64px; /* Adjust the size as needed */
+    border-radius: 50%;
+  }
+  

@@ -1,0 +1,10 @@
+.nav-section {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+  }
+  
+  .nav-section:hover {
+    visibility: visible;
+    opacity: 1;
+  }
